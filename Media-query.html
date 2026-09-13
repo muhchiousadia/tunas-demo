@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Grid Practice</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      border: 5px solid #6a5acd;
+      background-color: #f2f2f2;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 2fr 1fr;
+      gap: 5px 10px;
+      padding: 10px;
+    }
+
+    .container > div {
+      padding: 40px;
+      text-align: center;
+      font-size: 30px;
+    }
+
+    .header {
+      border: 4px dotted #6a5acd;
+      background-color: #87ceeb;
+      grid-column: 1 / 4;
+      position: sticky;
+      top: 0;
+      z-index: 1;
+    }
+
+    .menu {
+      border: 4px dotted #ff8c00;
+      background-color: #ffe4b5;
+      grid-column: 1 / 4;
+    }
+
+    .main {
+      border: 4px dotted #20b2aa;
+      background-color: #b0e0e6;
+      grid-column: 1 / 4;
+    }
+
+    .sidebar {
+      border: 4px dotted #dc143c;
+      background-color: #ffc0cb;
+      display: none;
+    }
+
+    .footer {
+      border: 4px dotted #228b22;
+      background-color: #98fb98;
+      grid-column: 1 / 4;
+    }
+
+    @media only screen and (min-width: 768px) {
+
+      .header {
+        grid-column: 1 / 4;
+      }
+
+      .menu {
+        grid-column: 1 / 2;
+      }
+
+      .main {
+        grid-column: 2 / 3;
+      }
+
+      .sidebar {
+        display: block;
+        grid-column: 3 / 4;
+      }
+
+      .footer {
+        grid-column: 1 / 4;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="header">Header</div>
+
+    <div class="menu">Menu</div>
+
+    <div class="main">Main</div>
+
+    <div class="sidebar">Sidebar</div>
+
+    <div class="footer">Footer</div>
+
+  </div>
+
+</body>
+
+</html>
