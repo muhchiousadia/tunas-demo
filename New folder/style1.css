@@ -1,0 +1,185 @@
+
+style.css
+Page
+1
+/
+1
+100%
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+}
+
+nav {
+    background: #182848;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 15px 40px;
+    gap: 15px;
+}
+
+.logo {
+    width: 45px;
+    height: 45px;
+    background: #a50044;
+    border: 3px solid #edbb00;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+nav h2 {
+    margin: 0;
+}
+
+.menu {
+    margin-left: auto;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+}
+
+.hero {
+    position: relative;
+    height: 450px;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    width: 300%;
+    height: 100%;
+    animation: slide 12s infinite;
+}
+
+.carousel img {
+    width: 33.33%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.hero-text h1 {
+    font-size: 42px;
+    margin: 0 0 10px;
+}
+
+.btn {
+    display: inline-block;
+    background: #a50044;
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+}
+
+#players {
+    padding: 40px 6%;
+    text-align: center;
+}
+
+.player-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px #aaa;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.card h3 {
+    margin-bottom: 5px;
+}
+
+.card p {
+    margin-top: 5px;
+}
+
+#about {
+    background: #182848;
+    color: white;
+    text-align: center;
+    padding: 40px;
+}
+
+@keyframes slide {
+    0%, 25% {
+        transform: translateX(0);
+    }
+
+    30%, 55% {
+        transform: translateX(-33.33%);
+    }
+
+    60%, 85% {
+        transform: translateX(-66.66%);
+    }
+
+    90%, 100% {
+        transform: translateX(0);
+    }
+}
+
+@media (max-width: 900px) {
+    .player-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    nav {
+        padding: 15px;
+    }
+
+    nav h2 {
+        font-size: 18px;
+    }
+
+    .menu a {
+        margin-left: 10px;
+    }
+
+    .hero {
+        height: 350px;
+    }
+
+    .hero-text h1 {
+        font-size: 28px;
+    }
+
+    .player-grid {
+        grid-template-columns: 1fr;
+    }
+}
+Displaying style.css. 
