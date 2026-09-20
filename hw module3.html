@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creative Student Profiles</title>
+
+  <style>
+    /* Global Styles & Box Model Setup */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3f0ff;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #4a148c;
+    }
+
+    /* CSS Grid for multiple cards layout */
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    /* Box Model */
+    .card {
+      position: relative;
+      background: #fff5f7;
+      padding: 24px;
+      border-radius: 12px;
+      border: 1px solid #ead7e5;
+      box-shadow: 0 4px 12px rgba(74, 20, 140, 0.12);
+
+      /* Flexbox for card content alignment */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    /* Online/New Badge */
+    .badge {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      background-color: #8e24aa;
+      color: #ffffff;
+      font-size: 11px;
+      font-weight: bold;
+      padding: 4px 10px;
+      border-radius: 12px;
+      text-transform: uppercase;
+    }
+
+    .card img {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+      border: 3px solid #8e24aa;
+    }
+
+    .card h3 {
+      color: #3e2723;
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+
+    .card p.role {
+      color: #8e24aa;
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .card p.bio {
+      color: #666;
+      font-size: 13px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+
+    .card button {
+      background-color: #8e24aa;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    .card button:hover {
+      background-color: #6a1b9a;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .card-container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Monkey group</h1>
+
+  <div class="card-container">
+
+    <!-- Profile Card 1 -->
+    <div class="card">
+      <span class="badge">rong dong</span>
+
+      <img 
+        src="https://tse4.mm.bing.net/th/id/OIP.5fDKe0xXSpU4Ml6fCdQRMgHaE7?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+        alt="Ummay Salma">
+
+      <h3>Salma</h3>
+
+      <p class="role">cikni chameli</p>
+
+      <p class="bio">
+        dongi,khai khai,exam ashle dumai pore
+      </p>
+
+      <button>Connect</button>
+    </div>
+
+    <!-- Profile Card 2 -->
+    <div class="card">
+      <span class="badge">matha betha</span>
+
+      <img 
+        src="https://tse2.mm.bing.net/th/id/OIP.N9Le9tBnvVO13B7Au1UPXAHaHn?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+        alt="Anjila">
+
+      <h3>Anjila</h3>
+
+      <p class="role">our gurdian</p>
+
+      <p class="bio">
+       alwys serious.
+      </p>
+
+      <button>Connect</button>
+    </div>
+
+    <!-- Profile Card 3 -->
+    <div class="card">
+      <span class="badge">ghum</span>
+
+      <img 
+        src="https://wallpapers.com/images/hd/baby-monkey-pictures-wsghob4rrsdtpbmo.jpg"
+        alt="Tunas">
+
+      <h3>Tunas</h3>
+
+      <p class="role">babu me</p>
+
+      <p class="bio">
+        salma anjilar jonne wait kore always
+      </p>
+
+      <button>Connect</button>
+    </div>
+
+  </div>
+
+</body>
+</html>
